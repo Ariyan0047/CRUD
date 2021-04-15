@@ -24,3 +24,33 @@
             </div>
         </div>
     </header>
+
+    <section class="data-section container mt-5">
+        <table class="table table-warning table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">product name</th>
+                    <th scope="col">product prize</th>
+                    <th scope="col">created at</th>
+                    <th scope="col">update / delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($products as $product): ?>
+                <?php
+                $id = $product["id"];
+                $date = $product["created_at"];
+                $name = $product["product_name"];
+                $prize = $product["product_prize"];
+                ?>
+                <tr>
+                    <th scope="row"><?php echo $id; ?></th>
+                    <td><?php echo $name; ?></td>
+                    <td><?php echo $prize; ?></td>
+                    <td><?php echo $date; ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </section>
