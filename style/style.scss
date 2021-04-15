@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  background: #ddd;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+}
+
+header.header-section {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem;
+  position: relative;
+  background: #ccc;
+}
