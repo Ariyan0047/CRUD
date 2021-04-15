@@ -19,38 +19,10 @@
                     <h1>crud</h1>
                 </div>
                 <div class="col-6">
-                    <button class="btn btn-outline-info w-100">add</button>
+                    <a href="./templates/insert.php" class="btn btn-outline-info w-100">add</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="data-section container mt-5">
-        <table class="table table-warning table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">product name</th>
-                    <th scope="col">product prize</th>
-                    <th scope="col">created at</th>
-                    <th scope="col">update / delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($products as $product): ?>
-                <?php
-                $id = $product["id"];
-                $date = $product["created_at"];
-                $name = $product["product_name"];
-                $prize = $product["product_prize"];
-                ?>
-                <tr>
-                    <th scope="row"><?php echo $id; ?></th>
-                    <td><?php echo $name; ?></td>
-                    <td><?php echo $prize; ?></td>
-                    <td><?php echo $date; ?></td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </section>
+    <?php include_once "./templates/data.php"; ?>

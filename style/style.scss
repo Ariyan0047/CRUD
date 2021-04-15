@@ -12,6 +12,12 @@
   text-transform: uppercase;
 }
 
+.btn1 {
+  border-radius: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 body {
   line-height: 1.6;
   font-weight: 400;
@@ -31,5 +37,17 @@ header.header-section {
 }
 
 section.data-section {
-  border: 0.2rem solid #ccc !important;
+  padding: 0;
+  border: 0.2rem solid #444;
+
+  table {
+    margin: 0;
+
+    th {
+      font-size: 1.4rem;
+    }
+    td {
+      font-size: 1.4rem;
+    }
+  }
 }
